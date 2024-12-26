@@ -6,4 +6,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/music', [MusicController::class, 'index']);
+
+
+Route::get('mymusic','App\Http\Controllers\MusicController@index');
